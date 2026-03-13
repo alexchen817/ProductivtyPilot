@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Biological Performance Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-6 md:px-10 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 rounded-xl bg-primary text-white">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">BioPerformance</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-1 bg-slate-200/50 dark:bg-slate-800 rounded-lg p-1">
+<button class="px-4 py-2 text-sm font-semibold rounded-md bg-white dark:bg-slate-700 shadow-sm">Daily</button>
+<button class="px-4 py-2 text-sm font-medium rounded-md hover:bg-white/50 dark:hover:bg-slate-700/50">Weekly</button>
+<button class="px-4 py-2 text-sm font-medium rounded-md hover:bg-white/50 dark:hover:bg-slate-700/50">Monthly</button>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-xl size-10 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/20 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-xl size-10 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/20 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="size-10 rounded-full border-2 border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile portrait showing a bio-hacker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLbz22OTpTsu6ulkck3LGdLRxW0a6Vks-2uWr2JfssxJWqnjqIO5U7fRLmNjYt6CWhtVzTop5g6ABkbLNOZVaoslltX2UGKnaGlyO_BW6wCXQnbC4AlY8fIM9txMid-7stDtm8BPx4YZJVfsGp7YweVOkah21mSq5UNR53JZ5XSeNzxqc6P0a6qEan1vKS14QkIKXGwdsYumhE-aCZmEcYzQZs4U5n5JiivEtT5VVU64LdRJaEc2Lnfh98fQp3BfGRQYpmX46NSUzp"/>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-8">
+<!-- Hero Title Section -->
+<div class="mb-10">
+<div class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-2">
+<span class="material-symbols-outlined text-sm">bolt</span>
+                    Biological Intelligence
+                </div>
+<h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Biological Performance Insights</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                    Detailed analysis of your metabolic, hormonal, and cognitive rhythms based on continuous biometric monitoring.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<!-- Sidebar Stats -->
+<aside class="lg:col-span-1 space-y-6">
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium mb-1">Metabolic Baseline</p>
+<h3 class="text-2xl font-bold">1,840 <span class="text-sm font-normal text-slate-400 italic">kcal/day</span></h3>
+<div class="mt-4 h-1.5 w-full bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium mb-1">Biological Age</p>
+<h3 class="text-2xl font-bold">28.4 <span class="text-sm font-normal text-green-500">-2.1 yrs</span></h3>
+<p class="text-xs text-slate-400 mt-2">Optimizing via current circadian alignment</p>
+</div>
+<div class="bg-primary/10 dark:bg-primary/5 p-6 rounded-xl border border-primary/20">
+<div class="flex items-center gap-2 text-primary mb-3">
+<span class="material-symbols-outlined">lightbulb</span>
+<span class="text-sm font-bold uppercase">Today's Insight</span>
+</div>
+<p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                            Your cortisol peak is delayed by 45 minutes today. Expect peak focus to arrive later in the morning.
+                        </p>
+</div>
+</aside>
+<!-- Main Content / Chart Area -->
+<div class="lg:col-span-3 space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+<div>
+<h3 class="text-xl font-bold">Daily Cognitive &amp; Energy Levels</h3>
+<p class="text-slate-500 text-sm">24-hour biological cycle synchronization</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-primary"></span>
+<span class="text-xs font-medium uppercase tracking-tighter">Energy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-blue-500"></span>
+<span class="text-xs font-medium uppercase tracking-tighter">Cognitive</span>
+</div>
+</div>
+</div>
+<!-- Main Visualization Container -->
+<div class="relative h-[400px] w-full mt-10">
+<!-- Y-Axis Labels -->
+<div class="absolute -left-8 inset-y-0 flex flex-col justify-between text-[10px] font-bold text-slate-400 py-4 uppercase">
+<span>High</span>
+<span>Mid</span>
+<span>Low</span>
+</div>
+<!-- Chart Placeholder -->
+<div class="w-full h-full flex items-end justify-between border-l border-b border-slate-200 dark:border-slate-800 pb-2 relative">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between opacity-10 pointer-events-none">
+<div class="border-t border-slate-900 dark:border-slate-100 w-full"></div>
+<div class="border-t border-slate-900 dark:border-slate-100 w-full"></div>
+<div class="border-t border-slate-900 dark:border-slate-100 w-full"></div>
+</div>
+<!-- The Wave Graph SVG -->
+<div class="absolute inset-0 px-2 overflow-visible">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 1000 400">
+<!-- Energy Path (Primary) -->
+<path class="text-primary" d="M0,350 C100,340 150,50 250,60 C350,70 450,250 550,240 C650,230 750,150 850,170 C950,190 1000,380 1000,380" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+<!-- Cognitive Path (Blue) -->
+<path class="text-blue-500" d="M0,380 C100,360 200,80 300,90 C400,100 500,280 600,270 C700,260 800,300 900,320 C1000,340 1000,380 1000,380" fill="none" stroke="currentColor" stroke-dasharray="8 4" stroke-linecap="round" stroke-width="4"></path>
+<!-- Peak Markers -->
+<circle class="fill-primary" cx="250" cy="60" r="6"></circle>
+<circle class="fill-slate-400" cx="550" cy="240" r="6"></circle>
+</svg>
+</div>
+<!-- X-Axis Labels -->
+<div class="absolute -bottom-8 inset-x-0 flex justify-between text-[10px] font-bold text-slate-400 px-2 uppercase">
+<span>06:00</span>
+<span>09:00</span>
+<span>12:00</span>
+<span>15:00</span>
+<span>18:00</span>
+<span>21:00</span>
+<span>00:00</span>
+</div>
+<!-- Peak Performance Windows Annotations -->
+<div class="absolute top-[30px] left-[18%] w-[18%] text-center">
+<div class="bg-primary text-white text-[10px] font-black py-1 px-2 rounded-full uppercase mb-2 animate-pulse">
+                                        Peak Window
+                                    </div>
+<div class="text-[11px] font-bold text-slate-800 dark:text-slate-200">Peak Cognitive Performance</div>
+<div class="text-[9px] text-slate-500 uppercase">09:15 - 11:30</div>
+</div>
+<div class="absolute bottom-[40px] right-[5%] w-[18%] text-center">
+<div class="bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-black py-1 px-2 rounded-full uppercase mb-2">
+                                        Lull Period
+                                    </div>
+<div class="text-[11px] font-bold text-slate-800 dark:text-slate-200">Lowest Cognitive Performance</div>
+<div class="text-[9px] text-slate-500 uppercase">23:00 - 05:00</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Phase Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border-l-4 border-primary border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-start justify-between mb-4">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<span class="text-xs font-bold text-slate-400">AM PHASE</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Maximum Velocity</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Optimal for deep work, complex problem solving, and strategic decision making. Your neural firing rate is currently at its daily maximum.
+                            </p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border-l-4 border-blue-500 border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-start justify-between mb-4">
+<div class="p-2 bg-blue-500/10 rounded-lg text-blue-500">
+<span class="material-symbols-outlined">nightlight</span>
+</div>
+<span class="text-xs font-bold text-slate-400">PM PHASE</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Recovery &amp; Consolidation</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Period of lower metabolic demand. Best suited for administrative tasks, reflection, and physiological wind-down protocols.
+                            </p>
+</div>
+</div>
+<!-- Key Metrics Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl text-center border border-slate-200 dark:border-slate-800">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Alertness</p>
+<span class="text-xl font-black text-primary">94%</span>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl text-center border border-slate-200 dark:border-slate-800">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">HRV Score</p>
+<span class="text-xl font-black text-slate-800 dark:text-slate-100">82</span>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl text-center border border-slate-200 dark:border-slate-800">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Metabolic Rate</p>
+<span class="text-xl font-black text-slate-800 dark:text-slate-100">High</span>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl text-center border border-slate-200 dark:border-slate-800">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Sleep Quality</p>
+<span class="text-xl font-black text-green-500">Optimal</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Info -->
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-6 px-10 text-center">
+<p class="text-xs text-slate-500">
+                Data analyzed from integrated biosensors. Last sync: 2 minutes ago.
+                <span class="mx-2">|</span>
+<a class="text-primary hover:underline" href="#">Download Biological PDF Report</a>
+</p>
+</footer>
+</div>
+</body></html>

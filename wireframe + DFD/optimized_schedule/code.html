@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Optimized Daily Schedule</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="max-w-[1200px] mx-auto min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between border-b border-primary/10 px-6 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">auto_fix_high</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Daily Optimizer</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Timeline</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Energy Map</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Tasks</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">calendar_today</span>
+</button>
+<button class="p-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden border border-primary/20">
+<img alt="User" data-alt="User profile photo of a smiling professional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOSrO1N8bStgJHGl0_ilH3tHfaJgNDmfV53NaVa6jH5JlKbRS1jWiDaF5y6Ax7EmZTqdvSvq9FpTaGBZZejdcetB4r9MwvwVPN7h8yKlJ8NYHiXeYn1lmggaW172ONXUK_v0Z2b-qPv4BjHB3UJErzrB7-2FNDVagbT7Krhp2nDDVJzOpq9L4cFRF7v4RdiOPtE-G4x2vsJwl_k2qGC7YguJwasaT3GZWVsjbuQVJ20atXtZGI69XGSfrqSIisdiQWnxSTxDNMw8bl"/>
+</div>
+</div>
+</header>
+<main class="flex-1 p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Sidebar: Energy Stats -->
+<aside class="lg:col-span-3 flex flex-col gap-6">
+<div class="p-6 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-4">Current Biological State</h3>
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<p class="text-2xl font-bold">Peak Focus</p>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Your cortisol levels are peaking. This is the optimal window for deep analytical work.
+                    </p>
+<div class="mt-4 h-2 w-full bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+<p class="text-[10px] mt-2 text-right font-medium text-primary">85% Energy Potential</p>
+</div>
+<div class="p-6 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-4">Legend</h3>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Fixed Event</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-blue-500"></div>
+<span class="text-sm font-medium">Optimized Task</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-emerald-500/20 border border-emerald-500"></div>
+<span class="text-sm font-medium">Biological Window</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Timeline Section -->
+<section class="lg:col-span-9 space-y-6">
+<div class="flex items-center justify-between mb-2">
+<div>
+<h1 class="text-2xl font-bold">Optimized Schedule</h1>
+<p class="text-slate-500">Tuesday, October 24th</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-primary text-white rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">
+                            Sync Calendar
+                        </button>
+</div>
+</div>
+<!-- Timeline Container -->
+<div class="relative bg-white dark:bg-slate-800 rounded-xl shadow-md border border-primary/10 overflow-hidden">
+<!-- Time Labels & Grid -->
+<div class="flex flex-col">
+<!-- 8:00 AM Slot -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[100px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">8 AM</div>
+<div class="flex-1 p-2 relative bg-emerald-50/30 dark:bg-emerald-900/10">
+<div class="absolute inset-y-2 left-2 right-4 rounded-lg border-l-4 border-primary bg-primary/5 p-3 flex flex-col justify-center">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-sm">Morning Strategy Sync</h4>
+<span class="text-[10px] bg-primary text-white px-2 py-0.5 rounded-full uppercase font-black">Fixed</span>
+</div>
+<p class="text-xs text-slate-500">Project Alpha Team</p>
+</div>
+</div>
+</div>
+<!-- 9:00 AM Slot - Biological Window -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[120px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">9 AM</div>
+<div class="flex-1 p-2 bg-emerald-50/50 dark:bg-emerald-900/20 relative group">
+<div class="absolute top-2 left-2 right-4 h-[calc(100%-16px)] rounded-lg border-2 border-dashed border-emerald-500/30 flex items-center justify-center">
+<span class="text-[10px] text-emerald-600 font-bold uppercase tracking-widest opacity-40">Biological Peak Focus Window</span>
+</div>
+<!-- Overlaid Task -->
+<div class="absolute top-4 left-6 right-8 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/30 p-3 shadow-sm z-10">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-sm text-blue-900 dark:text-blue-100">Draft Quarterly Architecture</h4>
+<span class="flex items-center gap-1 text-[10px] font-bold text-blue-600 bg-blue-100 dark:bg-blue-800 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">psychology</span> Deep Work
+                                        </span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-slate-400">info</span>
+<p class="text-[11px] text-slate-600 dark:text-slate-400">Slotted here: High cognitive load matches 95% energy score.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 10:00 AM Slot -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[100px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">10 AM</div>
+<div class="flex-1 p-2 bg-emerald-50/50 dark:bg-emerald-900/20 relative">
+<!-- Overlaid Task Continued/Next -->
+<div class="absolute top-2 left-6 right-8 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/30 p-3 shadow-sm">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-sm text-blue-900 dark:text-blue-100">Review PR Requests</h4>
+<span class="flex items-center gap-1 text-[10px] font-bold text-blue-600 bg-blue-100 dark:bg-blue-800 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">code</span> Analytical
+                                        </span>
+</div>
+<p class="text-[11px] mt-1 text-slate-500">Auto-filled in High Focus white space.</p>
+</div>
+</div>
+</div>
+<!-- 11:00 AM Slot -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[100px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">11 AM</div>
+<div class="flex-1 p-2 relative">
+<div class="absolute inset-y-2 left-2 right-4 rounded-lg border-l-4 border-primary bg-primary/5 p-3">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-sm">Product Lead Interview</h4>
+<span class="text-[10px] bg-primary text-white px-2 py-0.5 rounded-full uppercase font-black">Fixed</span>
+</div>
+<p class="text-xs text-slate-500">Candidate: Sarah Jenkins</p>
+</div>
+</div>
+</div>
+<!-- 12:00 PM Slot - Energy Dip -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[100px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">12 PM</div>
+<div class="flex-1 p-2 bg-orange-50/30 dark:bg-orange-900/10 relative">
+<div class="absolute inset-x-2 top-0 h-px bg-primary/20"></div>
+<div class="absolute top-2 left-2 right-4 h-[calc(100%-16px)] rounded-lg border-2 border-dashed border-orange-300 dark:border-orange-800 flex items-center justify-center">
+<span class="text-[10px] text-orange-600 font-bold uppercase tracking-widest opacity-40">Biological Energy Trough</span>
+</div>
+<div class="absolute top-4 left-6 right-8 rounded-lg border-l-4 border-slate-400 bg-slate-50 dark:bg-slate-700 p-3 italic">
+<div class="flex items-center gap-2 text-slate-500">
+<span class="material-symbols-outlined text-sm">restaurant</span>
+<h4 class="font-medium text-sm">Lunch &amp; Reset Window</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- 1:00 PM Slot -->
+<div class="flex border-b border-slate-100 dark:border-slate-700 min-h-[100px] relative">
+<div class="w-20 py-4 px-2 text-right text-xs font-bold text-slate-400 border-r border-slate-100 dark:border-slate-700">1 PM</div>
+<div class="flex-1 p-2 relative bg-orange-50/20 dark:bg-orange-900/5">
+<div class="absolute top-2 left-6 right-8 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/30 p-3 shadow-sm">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-sm text-blue-900 dark:text-blue-100">Clear Inbox (Zero)</h4>
+<span class="flex items-center gap-1 text-[10px] font-bold text-blue-600 bg-blue-100 dark:bg-blue-800 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">mail</span> Admin
+                                        </span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-slate-400">info</span>
+<p class="text-[11px] text-slate-600 dark:text-slate-400">Slotted here: Low energy cost task matches post-lunch trough.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Summary -->
+<div class="flex flex-wrap gap-4">
+<div class="flex-1 min-w-[200px] p-4 rounded-xl bg-primary/5 border border-primary/10 flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase">Alignment Score</p>
+<p class="text-xl font-black text-primary">92%</p>
+</div>
+</div>
+<div class="flex-1 min-w-[200px] p-4 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center gap-4">
+<div class="size-10 rounded-full bg-blue-500 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase">Tasks Slotted</p>
+<p class="text-xl font-black">4 of 5</p>
+</div>
+</div>
+<div class="flex-1 min-w-[200px] p-4 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center gap-4">
+<div class="size-10 rounded-full bg-emerald-500 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase">Deep Work</p>
+<p class="text-xl font-black">2.5 Hours</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>
